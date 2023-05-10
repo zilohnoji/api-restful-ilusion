@@ -28,8 +28,7 @@ public class UserService {
 	private UserMapper mapper;
 
 	public UserDTO insert(UserDTO userDto) {
-		UserDTO dto = mapper.toDto(repo.insert(mapper.toEntity(userDto)));
-		return dto;
+		return mapper.toDto(repo.insert(mapper.toEntity(userDto)));
 	}
 
 	public UserDTO findById(String id) {

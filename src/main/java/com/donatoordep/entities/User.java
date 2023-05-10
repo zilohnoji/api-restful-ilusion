@@ -32,6 +32,13 @@ public class User implements Serializable {
 	public User() {
 	}
 
+	public User(String name, String email, String cellphone) {
+		this.name = name;
+		this.email = email;
+		this.cellphone = cellphone;
+
+	}
+
 	public List<Course> getCourses() {
 		return courses;
 	}
